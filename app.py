@@ -1,5 +1,10 @@
-def add(a, b):     
-    return a + b 
- 
-if __name__ == "__main__":     
-    print(add(2, 3)) 
+from flask import Flask
+
+app = Flask(_name_)
+
+@app.route('/')
+def home():
+    return "Hello, Render is working!"
+
+if _name_ == "_main_":
+    app.run(host="0.0.0.0", port=10000)
