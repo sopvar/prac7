@@ -1,10 +1,8 @@
 from flask import Flask
-
 app = Flask(__name__)
 
-@app.route('/')
+@app.route("/")
 def home():
-    return "Hello sopan, Render is working!"
+    return str(2 + 3)
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=10000)
+app.run(host="0.0.0.0", port=10000)
